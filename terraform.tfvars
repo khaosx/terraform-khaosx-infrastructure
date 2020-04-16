@@ -1,0 +1,6 @@
+vsphere_server			= "cobalt.khaosx.net"
+vsphere_datacenter		= "Main"
+vsphere_datastore		= "Primary"
+vsphere_network			= "VM Network"
+vsphere_network_san 	= "SAN"
+vsphere_resource_pool	= "nitrogen.khaosx.net/Resources"
