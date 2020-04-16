@@ -18,6 +18,12 @@ Please read the notes in [this repo](https://github.com/khaosx/ubuntu-packer-tem
 1. Install [HashiCorp Terraform](https://www.terraform.io/)
 2. `git clone https://github.com/khaosx/terraform-khaosx-infrastructure.git`
 3. Modify the secrets file (secrets.auto.tfvars)
+```
+   cat >> secrets.auto.tfvars << 'EOF'
+   vsphere_user		= "admin@vsphere.local"
+   vsphere_password	= "Your Password"
+EOF
+```
 4. From the working directory, run `terraform init`
 5. To verify the actions that are about to happen, run `terraform plan`
 6. Build all VM's with `terraform apply`
